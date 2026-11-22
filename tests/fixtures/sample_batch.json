@@ -1,0 +1,60 @@
+{
+  "mode": "seed",
+  "categories_searched": ["maker", "comic_pop"],
+  "regions_searched": ["Central Florida"],
+  "notes": "Test fixture. Events and details are invented for testing.",
+  "series": [
+    {
+      "name": "Sample Maker Faire Orlando",
+      "aliases": ["SMF Orlando"],
+      "website": "https://example.com/maker",
+      "categories": ["maker", "engineering"],
+      "size_tier": "regional",
+      "recurrence": "annual",
+      "usual_months": [11],
+      "description": "A family-friendly showcase of invention, creativity and resourcefulness.",
+      "review_summary": "Attendees love the hands-on exhibits; parking can be tight.",
+      "review_pros": ["Hands-on exhibits"],
+      "review_cons": ["Parking"],
+      "review_sources": ["https://example.com/reviews/maker"],
+      "ai_interest_score": 90,
+      "interest_reason": "Maker faires are a stated favourite.",
+      "occurrences": [
+        {
+          "start_date": "2027-11-13",
+          "end_date": "2027-11-14",
+          "date_status": "estimated",
+          "venue_name": "Sample Expo Hall",
+          "city": "Orlando",
+          "state": "FL",
+          "price_min": 15,
+          "price_max": 40,
+          "price_notes": "$15 kids, $25 adult, $40 weekend",
+          "source_urls": ["https://example.com/maker/tickets"]
+        }
+      ]
+    },
+    {
+      "name": "Sample Comic Convention",
+      "categories": ["comic_pop"],
+      "size_tier": "major",
+      "recurrence": "annual",
+      "usual_months": [5],
+      "description": "A large multi-day comics and pop culture convention with celebrity guests.",
+      "ai_interest_score": 80,
+      "occurrences": [
+        {
+          "start_date": "2027-05-20",
+          "end_date": "2027-05-23",
+          "date_status": "confirmed",
+          "venue_name": "Sample Convention Center",
+          "city": "Orlando",
+          "state": "FL",
+          "price_min": 40,
+          "price_max": 150,
+          "ticket_url": "https://example.com/comic/tickets"
+        }
+      ]
+    }
+  ]
+}

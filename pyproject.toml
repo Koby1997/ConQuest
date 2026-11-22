@@ -1,0 +1,37 @@
+[project]
+name = "conquest"
+version = "0.1.0"
+description = "ConQuest - find conventions, expos, maker faires and other fun events before they happen"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    # Serves the web UI and its JSON API.
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    # The event database is a single SQLite file under data/.
+    "sqlalchemy>=2.0.36",
+    # Validates the JSON that the /discover skill hands to `conquest import`.
+    "pydantic>=2.9",
+    # Geocoding venues (OpenStreetMap Nominatim).
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+conquest = "conquest.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["conquest*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

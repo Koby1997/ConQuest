@@ -1,0 +1,5 @@
+{ "permissions": { "allow": [
+  "Bash(.venv/Scripts/python -m conquest *)",
+  "PowerShell(.venv/Scripts/python -m conquest *)",
+  "WebSearch", "WebFetch", "Edit(data/inbox/**)"
+] } }
